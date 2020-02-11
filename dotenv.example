@@ -1,0 +1,7 @@
+NODE_ENV="development"
+
+TG_BOT_TOKEN="TG_BOT_TOKEN"
+
+ROLLBAR_TOKEN="https://rollbar.com"
+
+DATABASE_URL="postgres://example"

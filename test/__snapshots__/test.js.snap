@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`webhook callback query 1`] = `"ok"`;
+
+exports[`webhook chosen inline query 1`] = `"ok"`;
+
+exports[`webhook edited message 1`] = `"ok"`;
+
+exports[`webhook forwarded channel message 1`] = `"ok"`;
+
+exports[`webhook forwarded message 1`] = `"ok"`;
+
+exports[`webhook inline query 1`] = `"ok"`;
+
+exports[`webhook message with a document 1`] = `"ok"`;
+
+exports[`webhook message with a reply 1`] = `"ok"`;
+
+exports[`webhook message with audio 1`] = `"ok"`;
+
+exports[`webhook message with entities 1`] = `"ok"`;
+
+exports[`webhook message with text 1`] = `"ok"`;
+
+exports[`webhook voice message 1`] = `"ok"`;
