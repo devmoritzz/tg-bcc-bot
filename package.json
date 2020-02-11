@@ -31,6 +31,7 @@
         "jest": "25.1.0",
         "nodemon": "2.0.2",
         "prettier": "1.19.1",
+        "telegram-typings": "4.0.0-beta",
         "typescript": "3.7.5"
     },
     "jest": {

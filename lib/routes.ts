@@ -1,7 +1,18 @@
-import * as TG from './controllers/telegram'
+import * as Joi from '@hapi/joi'
+import { dispatch } from './telegram'
 
-const routes = [
-    { path: '/tg/webhook', method: 'post', options: TG.webhook },
-].filter(Boolean)
-
-export default routes
+export const routes = [
+    {
+        path: '/tg/webhook',
+        method: 'post',
+        options: {
+            validate: {
+                payload: Joi.object().required(),
+            },
+            async handler(request) {
+                dispatch(request.payload)
+                return 'ok'
+            },
+        },
+    },
+]

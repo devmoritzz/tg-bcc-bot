@@ -1,8 +1,8 @@
 import * as Path from 'path'
 import * as Hapi from '@hapi/hapi'
 import * as dotenv from 'dotenv-safe'
+import { routes } from './routes'
 import plugins from './plugins'
-import routes from './routes'
 import model from './models'
 
 process.on('unhandledRejection', err => {
