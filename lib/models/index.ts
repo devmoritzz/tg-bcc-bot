@@ -31,6 +31,6 @@ export default {
 
 export interface ChatTag {
     id: number
-    chat: number
+    chat: string
     tag: string
 }

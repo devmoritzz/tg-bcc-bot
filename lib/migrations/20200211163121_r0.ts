@@ -14,5 +14,3 @@ export const up = (knex: Knex) => {
 export const down = (knex: Knex) => {
     return knex.schema.dropTable('tg_chat_tag')
 }
-
-export const config = { transaction: false }
