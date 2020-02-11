@@ -1,5 +1,6 @@
 NODE_ENV="development"
 
+TG_BOT_NAME="bot"
 TG_BOT_TOKEN="TG_BOT_TOKEN"
 TG_WEBHOOK_DOMAIN="www.example.com"
 TG_WEBHOOK_PATH="/crypto.randomBytes(10).toString('hex')"
