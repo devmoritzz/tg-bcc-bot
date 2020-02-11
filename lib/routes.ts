@@ -1,5 +1,5 @@
 import * as Joi from '@hapi/joi'
-import { dispatch } from './telegram'
+import { dispatch } from './telegram/dispatch'
 
 export const routes = [
     {

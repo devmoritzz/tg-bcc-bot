@@ -1,5 +1,5 @@
-import model from '../models'
 import { Update, Message } from 'telegram-typings'
+import model from '../models'
 import { dispatch as dispatchCmd } from './command'
 
 const collectTag = async (msg: Message) => {

@@ -17,6 +17,7 @@
         "@hapi/hapi": "19.1.0",
         "@hapi/joi": "17.1.0",
         "dotenv-safe": "8.2.0",
+        "form-data": "3.0.0",
         "hapi-pino": "6.5.0",
         "knex": "0.20.9",
         "node-fetch": "2.6.0",

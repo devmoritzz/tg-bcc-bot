@@ -1,13 +1,13 @@
 import rollbar from '../utils/rollbar'
-import { sendMessage } from './send'
 import model from '../models'
+import { sendMessage } from './api'
 
 const listHashtag = async (chat: number) => {
     const tags = await model.getTags(chat)
-    if (tags.length === 0) return
+    const text = tags.length === 0 ? 'not found' : tags.join('\n')
     sendMessage({
         chat_id: chat,
-        text: tags.join('\n'),
+        text,
         disable_notification: true,
     })
 }

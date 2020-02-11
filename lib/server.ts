@@ -4,6 +4,7 @@ import * as dotenv from 'dotenv-safe'
 import { routes } from './routes'
 import plugins from './plugins'
 import model from './models'
+import { setWebhook } from './telegram/api'
 
 process.on('unhandledRejection', err => {
     console.error(err)
@@ -43,6 +44,10 @@ export const init = async () => {
 
 export const start = async () => {
     const server = await common()
-    server.start()
+    await server.start()
+
+    const url = `https://${process.env.TG_WEBHOOK_DOMAIN}/tg/webhook`
+    await setWebhook({ url })
+
     return server
 }
