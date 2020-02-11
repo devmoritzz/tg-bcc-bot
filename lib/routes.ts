@@ -3,7 +3,7 @@ import { dispatch } from './telegram/dispatch'
 
 export const routes = [
     {
-        path: '/tg/webhook',
+        path: process.env.TG_WEBHOOK_PATH,
         method: 'post',
         options: {
             validate: {

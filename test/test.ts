@@ -11,6 +11,7 @@ afterAll(async () => {
 })
 
 describe('webhook', () => {
+    const url = process.env.TG_WEBHOOK_PATH!
     // https://core.telegram.org/bots/webhooks#testing-your-bot-with-updates
     test('message with text', async () => {
         const payload = {
@@ -37,7 +38,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -78,7 +79,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -119,7 +120,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -166,7 +167,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -202,7 +203,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -249,7 +250,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -290,7 +291,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -330,7 +331,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -370,7 +371,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -399,7 +400,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -428,7 +429,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',
@@ -457,7 +458,7 @@ describe('webhook', () => {
 
         const resp = await server.inject({
             method: 'post',
-            url: '/tg/webhook',
+            url,
             headers: {
                 'Content-Type': 'application/json',
                 'Cache-Control': 'no-cache',

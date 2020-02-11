@@ -34,6 +34,7 @@ jobs:
                   NODE_ENV: 'development'
                   TG_BOT_TOKEN: 'TG_BOT_TOKEN'
                   TG_WEBHOOK_DOMAIN: 'www.example.com'
+                  TG_WEBHOOK_PATH: '/xxx'
                   ROLLBAR_TOKEN: 'https://rollbar.com'
                   DATABASE_URL: 'postgres://example'
             - name: push to heroku
